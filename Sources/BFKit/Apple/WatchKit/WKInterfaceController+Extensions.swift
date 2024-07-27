@@ -25,6 +25,7 @@
 //  SOFTWARE.
 
 import Foundation
+#if canImport(WatchKit)
 import WatchKit
 
 // MARK: - WKInterfaceController animatable extension
@@ -84,3 +85,5 @@ public extension WKInterfaceController {
         }
     }
 }
+
+#endif
