@@ -38,8 +38,8 @@ let package = Package(
         .library(name: "BFKit", targets: ["BFKit"])
     ],
     targets: [
-        .target(name: "BFKit", exclude: ["Apple"]),
-        .testTarget(name: "BFKitTests", dependencies: ["BFKit"], exclude: ["Apple"])
+        .target(name: "BFKit", exclude: ["Linux"]),
+        .testTarget(name: "BFKitTests", dependencies: ["BFKit"], exclude: ["Linux"])
     ],
     swiftLanguageVersions: [.v5]
 )
