@@ -32,14 +32,14 @@ let package = Package(
     platforms: [
         .iOS(.v8),
         .macOS(.v10_10),
-        .watchOS(.v3)
+        .watchOS(.v3),
     ],
     products: [
         .library(name: "BFKit", targets: ["BFKit"])
     ],
     targets: [
-        .target(name: "BFKit", exclude: ["Linux"]),
-        .testTarget(name: "BFKitTests", dependencies: ["BFKit"], exclude: ["Linux"])
+        .target(name: "BFKit"),
+        .testTarget(name: "BFKitTests", dependencies: ["BFKit"]),
     ],
     swiftLanguageVersions: [.v5]
 )
